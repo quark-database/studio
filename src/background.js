@@ -9,7 +9,7 @@ import * as fs from "fs";
 import * as StringSimilarity from "string-similarity";
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
-const serversFile = 'servers.json';
+const serversFile = 'Recent Servers.json';
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
