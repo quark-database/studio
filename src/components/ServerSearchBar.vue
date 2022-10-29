@@ -1,5 +1,5 @@
 <template lang="pug">
-input#server-search-bar(v-on:keyup="onKeyDown", v-model="content", placeholder="Enter a host name or IP to search for...")
+input#server-search-bar(v-on:input="onKeyDown", v-model="content", placeholder="Enter a host name or IP to search for...")
 </template>
 
 <script>
@@ -21,6 +21,8 @@ export default {
       document.getElementById("server-search-bar").classList.add("playing-keypress-animation")
       await sleep(100);
       document.getElementById("server-search-bar").classList.remove("playing-keypress-animation")
+
+      this.$emit("key-pressed", this.content)
     }
   }
 }
@@ -47,7 +49,7 @@ export default {
     animation: server-search-bar-animation 100ms ease-in-out
     @keyframes server-search-bar-animation
       from
-        transform: scale(.99)
+        transform: scale(.997)
   &::placeholder
     color: $gray
 </style>

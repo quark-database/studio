@@ -10,6 +10,7 @@ export default {
   props: {
     title: String,
     icon: String,
+    page: String,
   },
 
   computed: {
@@ -56,6 +57,7 @@ export default {
       color: colors.$primary
       margin-left: .6em
       font-weight: 700
+      font-size: 1.08em
     .icon
       filter: invert(29%) sepia(97%) saturate(3290%) hue-rotate(204deg) brightness(104%) contrast(107%)
 </style>
