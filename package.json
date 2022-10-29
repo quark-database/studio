@@ -14,11 +14,17 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.8.3",
+    "js-levenshtein": "^1.1.6",
+    "natural": "^5.2.3",
+    "prismjs": "^1.29.0",
     "pug-loader": "^2.4.0",
     "quark-api": "^1.1.0",
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
-    "vue": "^3.2.13"
+    "string-similarity": "^4.0.4",
+    "textarea-caret": "^3.1.0",
+    "vue": "^3.2.13",
+    "vue-hotkeys-rt": "^0.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -26,6 +32,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/devtools": "^6.3.0",
     "electron": "^13.0.0",
     "electron-devtools-installer": "^3.1.0",
     "eslint": "^7.32.0",
